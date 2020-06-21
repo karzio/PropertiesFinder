@@ -2,6 +2,7 @@
 {
     public class PropertyPrice
     {
+        public int Id { get; set; }
         /// <summary>
         /// Cenna brutto oferty. Nie powinna uwzględniać opłat eksploatacyjnych/czynszu itp. przy wynajmie
         /// </summary>

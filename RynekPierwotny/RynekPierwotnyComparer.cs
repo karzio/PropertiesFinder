@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Application.RynekPierwotny
+namespace RynekPierwotny
 {
-    class RynekPierwotnyComparer : IEqualityComparer<Entry>
+    public class RynekPierwotnyComparer : IEqualityComparer<Entry>
     {
         private bool HasTheSameAddress(Entry x, Entry y)
         {

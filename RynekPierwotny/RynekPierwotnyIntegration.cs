@@ -4,9 +4,9 @@ using Models;
 using System;
 using System.Collections.Generic;
 
-namespace Application.RynekPierwotny
+namespace RynekPierwotny
 {
-    class RynekPierwotnyIntegration : IWebSiteIntegration
+    public class RynekPierwotnyIntegration : IWebSiteIntegration
     {
         public WebPage WebPage { get; }
         public IDumpsRepository DumpsRepository { get; }
@@ -78,9 +78,11 @@ namespace Application.RynekPierwotny
             }
         }
 
-        private IEnumerable<Entry> CreateEntries()
+        public IEnumerable<Entry> CreateEntries(int page = 1)
         {
-            var mainPageOfferNodeCollection = GetHtmlNodeCollection(WebPage.Url + defaultOffersQuery, mainPageOfferLinkXPath);
+            var mainPageOfferNodeCollection = GetHtmlNodeCollection(
+                WebPage.Url + defaultOffersQuery + "?page=" + page,
+                mainPageOfferLinkXPath);
             var singleOfferDocuments = GetSingleOfferDocuments(mainPageOfferNodeCollection);
             foreach (var singleOfferDocument in singleOfferDocuments)
             {

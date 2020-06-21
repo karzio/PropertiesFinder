@@ -3,6 +3,7 @@
     public class PropertyFeatures
     {
 
+        public int Id { get; set; }
         /// <summary>
         /// Wielkość ogródka w metrach. "0" w przypadku gdy oferta nie zawiera ogródka
         /// "null" w przypadku braku danych
