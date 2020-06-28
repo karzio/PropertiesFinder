@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseConnection", "Datab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationApi", "IntegrationApi\IntegrationApi.csproj", "{DD00F9D6-726A-469C-8D59-AA85F9F991C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RynekPierwotny", "RynekPierwotny\RynekPierwotny.csproj", "{0493FFA4-C0A9-46FB-A0EE-6D80DFA297C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RynekPierwotny", "RynekPierwotny\RynekPierwotny.csproj", "{0493FFA4-C0A9-46FB-A0EE-6D80DFA297C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationApi.Tests", "IntegrationApiTests\IntegrationApi.Tests.csproj", "{896C29F7-E4F2-45D6-AA26-E1D6F549AF7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0493FFA4-C0A9-46FB-A0EE-6D80DFA297C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0493FFA4-C0A9-46FB-A0EE-6D80DFA297C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0493FFA4-C0A9-46FB-A0EE-6D80DFA297C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896C29F7-E4F2-45D6-AA26-E1D6F549AF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896C29F7-E4F2-45D6-AA26-E1D6F549AF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896C29F7-E4F2-45D6-AA26-E1D6F549AF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896C29F7-E4F2-45D6-AA26-E1D6F549AF7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

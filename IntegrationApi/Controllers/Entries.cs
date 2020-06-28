@@ -38,7 +38,22 @@ namespace IntegrationApi.Controllers
             }
         }
 
-        // GET api/<ValuesController>/5
+        /// <summary>
+        /// Returns the cheapest entry (per meter) in a city
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
+        [HttpGet("entries/best")]
+        public ActionResult<IEnumerable<Entry>> Get()
+        {
+            var city = Request.Query["city"];
+            using (DatabaseContext databaseContext = new DatabaseContext())
+            {
+                var query = new Query(city, databaseContext);
+                return query.GetEntries();
+            }
+        }
+
         [HttpGet("entry/{id}")]
         public async Task<ActionResult<Entry>> Get(int id)
         {
